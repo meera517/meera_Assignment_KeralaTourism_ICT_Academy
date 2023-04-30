@@ -1,0 +1,287 @@
+
+* {
+    margin: 0;
+    padding: 0;
+
+   
+  }
+  p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background-image: url(/assets/images/Home_real/home_main/compass-2946959_1920.jpg); */
+    /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+  }
+  
+  @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+        }
+      50% {
+        background-position: 100% 50%;
+        }
+      100% {
+        background-position: 0% 50%;
+        }
+  }
+  
+  
+  /*  */
+  .card {
+    margin-bottom: 20px;
+    border: none
+}
+
+.box {
+   width: 22em;
+    padding:25px;
+    max-width: 480px;
+    position: absolute;
+    /* top: 20%; */
+    left: 50%;
+    border-radius: 25px;
+    background:black;
+    text-align: center;
+    transition: 0.25s;
+    margin-top: -22em;
+    margin-left: -5em;
+  
+}
+.box input[type="text"],
+.box input[type="password"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 10px 10px;
+    width: 250px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    position: relative;
+    top: 10px;
+}
+
+.box h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500
+}
+.box input[type="text"]:focus,
+.box input[type="password"]:focus {
+    width: 250px;
+    border-color: #2ecc71
+}
+
+.box input[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #010608;
+    background-color: rgb(43, 47, 110);
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    position: relative;
+    bottom: 35px;
+    position: relative;
+    bottom: 80px;
+}
+
+.box input[type="submit"]:hover {
+    background: #808080;
+    color: #000;
+    font-weight:bolder;
+}
+
+.card label{
+  color: #fff;
+} 
+.card p{
+  color: #ff006e;
+}
+
+@media (max-width:600px){
+  .box{
+    width: 350px;
+    margin-left: -175px;
+    /* padding-bottom: 10px; */
+    margin-top: -22em;
+    padding: 30px;
+  }
+  .formli{
+    position: relative;
+    margin-left: -30px;
+    top: -52px;
+    font-size: 22px;
+    opacity: 2px;
+  
+    cursor: pointer;
+  }
+   
+
+  #box2{
+    margin-top: -20em;
+  }
+.box input[type="text"],
+.box input[type="password"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 10px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+
+  .box input[type="text"]:focus,
+.box input[type="password"]:focus {
+    width: 225px;
+    border-color: #2ecc71
+}
+
+
+}
+@media (min-width:1200px) {
+  .box{
+    width:500px;
+    margin-left: 50%;
+    padding:50px;
+  }
+}
+
+
+
+
+.forgot {
+    text-decoration: underline
+}
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0 5px
+}
+
+.social-network a.icoFacebook:hover {
+  background-color: #3B5998
+}
+
+.social-network a.icoTwitter:hover {
+  background-color: #33ccff
+}
+
+.social-network a.icoGoogle:hover {
+  background-color: #BD3518
+}
+.social-network a.icoFacebook:hover i,
+.social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i {
+    color: #fff
+}
+
+a.socialIcon:hover,
+.socialHoverClass {
+    color: #44BCDD
+}
+
+.social-circle li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    border-radius: 50%;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    font-size: 20px
+}
+
+.social-circle li i {
+    margin: 0;
+    line-height: 50px;
+    text-align: center
+}
+.social-circle li a:hover i,
+.triggeredHover {
+    transform: rotate(360deg);
+    transition: all 0.2s
+}
+
+<!-- .social-circle i {
+    color: #fff;
+    transition: all 0.8s;
+    transition: all 0.8s;
+}
+#emaillabel{
+  
+   border: 0px solid;
+   border-radius: 10px 10px 10px;
+   background-color: rgba(92, 57, 0); 
+   width: 140px; 
+   position: relative;
+   top: 10px;
+
+   
+}
+
+#passlabel,#numlabel,#emaillabel{
+  border: 0px solid;
+  border-radius: 12px;
+  position: relative;
+  bottom: 40px;
+  background-color: rgb(92, 57, 0); 
+  width: 170px; 
+  
+} -->
+
+.formli{
+  position: relative;
+  bottom: 45px;
+  left: 90px;
+  font-size: 22px;
+  opacity: 2px;
+
+  cursor: pointer;
+}
+ 
+
+
+
+
+
+.valid {
+  color: green;
+}
+
+
+
+
