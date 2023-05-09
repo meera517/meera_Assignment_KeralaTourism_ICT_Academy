@@ -69,35 +69,41 @@
                    
                       <div class="card col-6 col-lg-2 m-5 ">
                         
-                          <form action="succesPage.html"   class="box" id="box2">
+                        <form action="succesPage.html"  onsubmit="return validate()"  class="box" id="box2">
                         
                               <h1 style="color:#1c55d7;">SIGN UP</h1>
                               <p class="text-muted"> Please fill in this form to create an account.</p>
 
-                              <input type="text" id="username" name="" placeholder="Username" > 
+                              
+                              <input type="text" id="username" name="" placeholder="Username" onkeyup="return userName()"> 
                                <label for="name" id="userlabel"></label>
                               
-                               <input type="text" name="" placeholder="Email" id="email" > 
+                               <input type="text" name="" placeholder="Email" id="email" class="email_class" onkeyup="return emailValid()"> 
                                <label for="email" id="emaillabel"></label>
 
-                               <input type="text" id="num" name="" placeholder="Mobile no."  > 
+                               <input type="text" id="num" name="" placeholder="Mobile no." onkeyup="return numField()" > 
                                <label for="number" id="numlabel"></label>
                                <!-- <br> -->
                                <label for="numtext" id="numtext"></label>
 
                                <p>
-                                <input type="password"  id="psw" class="pass"  name="psw" placeholder="Password"> 
+                                <input type="password"  id="psw" class="pass"  name="psw" onkeyup="return passMain()" placeholder="Password"> 
                                 <i class="bi bi-eye-slash text-white formli" id="togglePassword"></i>
                                </p>
                                <label for="password" id="passlabel"></label>
                                <!-- reenter pass -->
-                               <input type="password" id="pass1" name="" placeholder="Repeat Password" > 
+                               <input type="password" id="pass1" name="" placeholder="Repeat Password" onkeyup="return passRepeat()" > 
                                <label for="password" id="passlabel1"></label>
                                
                                <br>
                                <!--  -->
-                              
-                             
+                               <div id="message" class="validCondition">
+                                <h3>Password must contain the following : </h3>
+                                <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                                <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                                <p id="number" class="invalid">A <b>number</b></p>
+                                <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+                              </div>                           
 
                               <!--  -->
                               <div class="progress" id="Progress" style="width: 60%; position: relative;left: 80px;bottom: 80px;">
@@ -110,7 +116,7 @@
                                <!--  -->
                       
                                <!-- <label>
- <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                               <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
                               </label>
                                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p> -->
                                <input type="submit" name="" value="SignUp" onsubmit="userName()">
